@@ -13,14 +13,22 @@ Input: 3
 Output: ["((()))", "(()())", "()(())", "(())()", "()()()"]
 '''
 
+def parentheses_builder(s,left,right,result):
+  if left == 0 and right == 0:
+    result.append(s)
+    return
+  
+  if left > 0:
+    parentheses_builder(s + "(", left - 1, right, result)
+  
+  if left < right:
+    parentheses_builder(s + ")", left, right - 1, result)
+
 def solution(n):
-  pass
+  result = []
+  parentheses_builder("", n, n, result)
+  return result
 
-
-output_1 = ["()"]
-output_2 = ["(())", "()()"]
-output_3 = ["((()))", "(()())", "()(())", "(())()", "()()()"]
-
-assert output_1 == solution(1)
-assert output_2 == solution(2)
-assert output_3 == solution(3)
+print(solution(1))
+print(solution(2))
+print(solution(3))
