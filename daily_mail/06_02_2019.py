@@ -29,7 +29,7 @@ def solution(intervals):
     
   return merged_stack
 
-print(solution([[2,4], [1,5], [7,9]]))
-print(solution([[3,6], [1,3], [2,4]]))
-print(solution([[0,1], [0,1]]))
+print(solution([[2,4],[1,5],[7,9]]))
+print(solution([[3,6],[1,3],[2,4]]))
+print(solution([[0,1],[0,1]]))
 print(solution([[1,3],[2,6],[8,10],[15,18]]))
