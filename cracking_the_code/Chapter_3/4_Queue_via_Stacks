@@ -1,0 +1,12 @@
+"""
+Chapter 03 | Problem 04 - Queue via Stacks
+
+Problem Statement:
+  Implement a MyQueue class which implements a queue using two stacks.
+"""
+
+Solution:
+  Initially use one stack to store all items incoming. When pop is called,
+  pop out all elements from the first stack and push onto the second stack.
+  If last element is popped from first stack, return that as a pop.
+  

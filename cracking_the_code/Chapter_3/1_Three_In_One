@@ -1,0 +1,10 @@
+"""
+Chapter 03 | Problem 01 - Three In One
+
+Problem Statement:
+  Describe how you could use a single array to implement three stacks.
+"""
+
+Solution:
+  Use modulo 3 to indicate each stack. For example, stack 1 would use indices of
+  multiples of 3, stack 2 uses 1,4,7 etc..

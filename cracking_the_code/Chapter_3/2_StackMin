@@ -1,0 +1,12 @@
+"""
+Chapter 03 | Problem 02 - Stack Min
+
+Problem Statement:
+  How would you design a stack which, in addition to push and pop, has a function
+  min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
+"""
+
+Solution:
+  Inside Stack, create an array that stores min elements in order. If an element is pushed,
+  update the array if it's smaller than current min element. If an element is
+  popped and is an min element, update the array also.
